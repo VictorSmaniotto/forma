@@ -7,12 +7,12 @@ void main() {
   var quad = Quadrado(15);
   quad.imprimeForma();
 
-  var ret = Retangulo(10, 5);
+  var ret = Retangulo(11, 5);
   ret.imprimeForma();
 
   var tri = Triangulo(10, 5);
   tri.imprimeForma();
 
-  var cir = Circulo(9);
+  var cir = Circulo(1);
   cir.imprimeForma();
 }

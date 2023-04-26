@@ -1,11 +1,11 @@
 abstract class Forma {
   String tipoDeForma = '';
 
-  imprimeForma() {
-    this.calculaArea();
+  Forma(this.tipoDeForma);
+
+  double calculaArea();
+
+  void imprimeForma() {
     print("$tipoDeForma com area de: ${this.calculaArea().toStringAsFixed(2)}");
   }
-
-  Forma(this.tipoDeForma);
-  double calculaArea();
 }

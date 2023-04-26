@@ -1,13 +1,13 @@
 import 'Forma.dart';
 
 class Triangulo extends Forma {
-  double cumprimentoBase = 0;
+  double comprimentoBase = 0;
   double altura = 0;
 
-  Triangulo(this.cumprimentoBase, this.altura) : super('Triangulo');
+  Triangulo(this.comprimentoBase, this.altura) : super('Triangulo');
 
   @override
   double calculaArea() {
-    return ((cumprimentoBase * altura) / 2);
+    return ((comprimentoBase * altura) / 2);
   }
 }
