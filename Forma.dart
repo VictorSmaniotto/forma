@@ -1,11 +1,14 @@
+enum TipoForma { Quadrado, Retangulo, Triangulo, Circulo }
+
 abstract class Forma {
-  String tipoDeForma = '';
+  final TipoForma tipoDeForma;
 
   Forma(this.tipoDeForma);
 
   double calculaArea();
 
   void imprimeForma() {
-    print("$tipoDeForma com area de: ${this.calculaArea().toStringAsFixed(2)}");
+    print(
+        "${tipoDeForma.name} com area de: ${this.calculaArea().toStringAsFixed(2)}");
   }
 }
